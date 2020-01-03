@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand navbar-light bg-light">
         <a class="navbar-brand" href="#">
             <img src="logo.jpg" width="70" height="70" class="d-inline-block align-middle" alt="LOGO">
         </a>
@@ -34,11 +34,46 @@
             </ul>
         </div>
     </nav>
-
-    <main>
-
-
+    <header></header>
+    <main class="container-xl">
+        <div class="row">
+            <div class="col-3 offset-9">
+                <button class="btn btn-outline-primary">Ajouter un nouvel collaborateur</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h1>Les collaborateurs</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">
+                <label for="champ_recherche">Rechercher un nom ou un prénom qui commence par: </label>
+            </div>
+            <div class="col-2">
+                <input type="text" id="champ_recherche" name="terme_recherche" required >
+            </div>
+            <div class="col-2">
+                <input type="submit" name="Rechercher" value="Rechercher" class="btn btn-outline-primary">
+            </div>
+            <div class="col-3">
+                <input id="voir_collab_chkbox" type="checkbox" name="voir_collab" >
+                <label for="voir_collab_chkbox">Voir les collaborateurs désactivés</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-5">Filtrer par département:</div>
+            <div class="col-2">
+                <select>
+                    <option>Tous</option>
+                    <option>Compatibilité</option>
+                    <option>Ressources Humaines</option>
+                    <option>Informatique</option>
+                </select>
+            </div>
+        </div>
     </main>
+    <footer></footer>
 
     <!-- TODO -->
     <!-- Optional JavaScript -->
